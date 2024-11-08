@@ -1,0 +1,28 @@
+[general]
+# current source DAC, can be vnsubin or vnsubout; default: vnsubin
+current_source = vnsubin
+# number of iterations; default: 2
+iterations = 2
+# optimize gate-on voltages
+optimize_gateon = True
+# optimize current source DAC
+optimize_dac = True
+
+[gateon]
+target = -1500
+range = 100
+step = 10
+
+[vnsubin]
+# expected optimal VNSubIn
+# for gate-on target -2000: 35
+# for gate-on target -2500: 44
+# for gate-on target -1500: 25
+target = 30
+range = 15
+step = 3
+
+[vnsubout]
+target = 50
+range = 20
+step = 5

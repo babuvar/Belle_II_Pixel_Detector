@@ -1,0 +1,24 @@
+[general]
+; [REQUIRED] asicpairs to scan (no delimiters, e.g. 1234, 2, 0 means all. Not allowed are combinations like 13 or 24,
+; either all or single asic!)
+asicpair = 0
+; path overwrites automatic path creation, should only be set when this is explicitely wanted)
+; ~ will be expanded with user's home directory
+;path =
+; [OPTIONAL] which device? hybrid5 or pxd9? , if not given will be determined from configDB
+;device =
+; [OPTIONAL] module name? e.g. W30_IB or H5006, if not given will be determined from configDB
+;module =
+; [OPTIONAL] module type? ib, if, ob, of or none for hyrid5, if not given will be determined from configDB
+;module_type =
+; [REQUIRED] number of frames that will be recorded
+framenr = 100
+; [REQUIRED] trigger frequency in Hz. For pxd9 100 works, for Hybrid5 200
+triggerfrequency = 100
+; [REQUIRED] Is an external trigger used? For lab setups the internal trigger is used most of the time.
+useExternalTrigger = False
+; [OPTIONAL] Setup from master config ini that will be used
+;setup = BEAST-II
+; [OPTIONAL] If this option is set to yes, the elog will ask for a username and password which is used to connect to
+; the specified elog.
+useELOGcredentials = True
